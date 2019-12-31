@@ -1,11 +1,12 @@
 {
-  "name": "node-course-test",
+  "name": "node-basic-project",
   "version": "1.0.0",
-  "description": "The test for the Node.js course designed by Fiqus coop",
+  "description": "Template project for Node+Express+Mongo project",
   "main": "app.js",
   "scripts": {
     "start": "node ./app.js",
-    "test": "NODE_ENV=test ./node_modules/mocha/bin/_mocha --timeout 2000 --exit"
+    "test": "NODE_ENV=test ./node_modules/mocha/bin/_mocha --timeout 2000 --exit",
+    "test-coverage": "istanbul cover _mocha -- test/*.test.js"
   },
   "keywords": [
     "exam",
@@ -14,7 +15,7 @@
     "mocha",
     "chai"
   ],
-  "author": "Cambá",
+  "author": "Código Libre Coop",
   "license": "GPL-3.0",
   "dependencies": {
     "body-parser": "^1.18.3",

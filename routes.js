@@ -6,7 +6,6 @@ const {
   TechnologiesController,
   StatsController
 } = require("./controllers");
-const afipAPI = require("./services/afip-mock-api");
 
 function mapGenericControllerRoutes(controllers, router) {
   controllers.forEach(({basePath, controller}) => {
@@ -47,9 +46,6 @@ module.exports = (app, router) => {
 
   router.route("/stats/failuresByStates")
     .get(statsController.failuresByStates);
-
-  router.route("/afip")
-    .post(afipAPI.getInvoice);
 
   return router;
 };
