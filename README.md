@@ -1,10 +1,7 @@
-# node-course-test
-Exam repo for Fiqus' [node-course](https://github.com/fiqus/node-course) by Cambá.
+# node-base-project
 
 ### Contents
 - [Installation](/README.md#installation)
-- [Domain description](/DESCRIPTION.md)
-- [API](/API.md)
 
 ## Installation
 In the project root run:
